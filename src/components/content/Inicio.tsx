@@ -5,6 +5,7 @@ import Title from '../shared/Title';
 import ListTasks from '../shared/ListTasks';
 import Modal from '../shared/Modal';
 import Button from '../shared/Button';
+import KanbanBoard from './KanbanBoard';
 
 const Inicio: React.FC = () => {
   const tasks = useStore((state: any) => state.tasks);
@@ -26,7 +27,7 @@ const Inicio: React.FC = () => {
     <div className='container'>
       <Title title="Todas las tareas hasta la fecha" level="h2" />
       <Button styleBtn="btn-add" text="Añadir Tarea" onClick={() => setIsModalOpen(true)} />
-      <ListTasks tasks={tasks} />
+      <KanbanBoard />
       {isModalOpen && (
         <Modal
           title="Añadir Nueva Tarea"
