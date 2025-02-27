@@ -23,9 +23,9 @@ const Inicio: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <Title title="Todas las tareas hasta la fecha" level="h2" />
-      <Button text="Añadir Tarea" onClick={() => setIsModalOpen(true)} />
+      <Button styleBtn="btn-add" text="Añadir Tarea" onClick={() => setIsModalOpen(true)} />
       <ListTasks tasks={tasks} />
       {isModalOpen && (
         <Modal

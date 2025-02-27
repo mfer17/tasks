@@ -15,3 +15,8 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+.container{
+  padding: 30px 50px;
+  position: relative;
+}

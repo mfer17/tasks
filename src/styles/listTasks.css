@@ -1,16 +1,60 @@
+.container-list-tasks{
+    overflow: auto;
+    height: 550px;
+    width: 370px;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+.container-list-tasks::-webkit-scrollbar{
+    -webkit-appearance: none !important;
+}
+
+.container-list-tasks::-webkit-scrollbar{
+    -webkit-appearance: none !important;
+}
+
+.container-list-tasks::-webkit-scrollbar:vertical{
+    width:10px !important;
+}
+
+.container-list-tasks::-webkit-scrollbar-button:increment{
+    display: none !important; 
+} 
+
+.container-list-tasks::-webkit-scrollbar:horizontal{
+    height: 10px !important;
+}
+
+.container-list-tasks::-webkit-scrollbar-thumb{
+    background-color: #797979 !important;
+    border-radius: 20px !important;
+    border: 2px solid #f1f2f3 !important;
+}
+
+.container-list-tasks::-webkit-scrollbar-track{
+    border-radius: 10px !important;  
+}
+
 .list-tasks{
     margin-top: 20px;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    height: 100%;
+    width: 95%;
 }
 
 .list-tasks li{
-    padding: 20px 30px;
+    padding: 10px 5px;
     border-radius: 5px;
     margin-bottom: 10px;
     text-align: left;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
