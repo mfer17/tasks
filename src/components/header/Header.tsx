@@ -7,10 +7,7 @@ const Header: React.FC = () => {
     <header className="App-header">
       <nav>
         <ul>
-          <li><Link to="/inicio">Inicio</Link></li>
-          <li><Link to="/task-kronotime">Task Kronotime</Link></li>
-          <li><Link to="/task-mafe">Task Mafe</Link></li>
-          <li><Link to="/task-inversiones">Task Inversiones</Link></li>
+          <li><Link to="/">Task</Link></li>
         </ul>
       </nav>
     </header>

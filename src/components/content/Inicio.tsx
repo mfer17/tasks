@@ -25,7 +25,7 @@ const Inicio: React.FC = () => {
 
   return (
     <div className='container'>
-      <Title title="Todas las tareas hasta la fecha" level="h2" />
+      <Title title="Tasks" level="h2" />
       <Button styleBtn="btn-add" text="Añadir Tarea" onClick={() => setIsModalOpen(true)} />
       <KanbanBoard />
       {isModalOpen && (
